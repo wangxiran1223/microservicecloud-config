@@ -1,5 +1,17 @@
 spring:
   # 环境 zsc1|prod
+  profiles: 
+    active: 
+    - dev
+---
+spring:
+  # 环境 zsc1|prod
   profiles: dev
   application: 
     name: microservicecloud-config-atguigu-dev
+---
+spring:
+  # 环境 zsc1|prod
+  profiles: test
+  application: 
+    name: microservicecloud-config-atguigu-test
